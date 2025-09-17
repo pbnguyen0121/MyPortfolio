@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phuong Bac Nguyen - Portfolio</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Phuong Bac Nguyen</h1>
+    <p>Software Developer | Machine Learning Enthusiast</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <button id="toggle-theme">Dark Mode</button>
+  </nav>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <img 
+        src="https://avatars.githubusercontent.com/u/156368694?s=400&u=e7dbf893098f9856fea9cff4680c188fe447b4b2&v=4" 
+        alt="Profile Photo" 
+        class="about-img">
+
+      <p style="text-align:center;">
+        I am a Computer Programming and Analysis student at Seneca Polytechnic, passionate about 
+        software engineering, web development, and machine learning. I enjoy building scalable 
+        applications, working with data pipelines, and continuously learning new technologies.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill">Python</div>
+    <div class="skill">C/C++</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">SQL (MySQL, PostgreSQL)</div>
+    <div class="skill">MongoDB</div>
+    <div class="skill">React</div>
+    <div class="skill">Angular</div>
+    <div class="skill">Node.js</div>
+    <div class="skill">Express.js</div>
+    <div class="skill">Next.js</div>
+    <div class="skill">RESTful APIs</div>
+    <div class="skill">Git & GitHub</div>
+    <div class="skill">Jira</div>
+    <div class="skill">Vercel</div>
+    <div class="skill">Cloudinary</div>
+    <div class="skill">Docker (basic)</div>
+    <div class="skill">Bash / Unix</div>
+    <div class="skill">Agile / Scrum</div>
+  </div>
+</section>
+
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="public/Museum_Explorer.png" alt="Museum Explorer">
+        <div class="card-content">
+          <h3>Museum Explorer Full Stack</h3>
+          <p>Full-stack web app with secure authentication, MongoDB Atlas, and React/Next.js frontend.</p>
+          <a href="https://github.com/pbnguyen0121/Museum-Explorer-Full-Stack" target="_blank">View Project</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="public/quickshopper.png" alt="QuickShopper">
+        <div class="card-content">
+          <h3>QuickShopper</h3>
+          <p>Dynamic eCommerce platform with PostgreSQL, Express.js, and Cloudinary image hosting.</p>
+          <a href="https://github.com/pbnguyen0121/QuickShopper" target="_blank">View Project</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="public/PathFinder_Logistics.png" alt="PathFinder Logistics">
+        <div class="card-content">
+          <h3>PathFinder Logistics</h3>
+          <p>Delivery system in C/C++ with route optimization, automated testing, and Agile workflows.</p>
+          <a href="https://github.com/pbnguyen0121/PathFinder-Logistics" target="_blank">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit" class="submit">
+        <span id="btn-text">Send Message</span>
+        <span id="loading-spinner" style="display:none;">⏳</span>
+      </button>
+    </form>
+    <div id="toast"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 Phuong Bac Nguyen | Built with HTML, CSS & JavaScript</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
